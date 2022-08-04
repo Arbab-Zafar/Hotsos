@@ -7,16 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Word Meanings</title>
     <style>
+         @media only screen and (max-width: 950px) {
+            body {
+                background-color: rgb(234, 247, 251);
+                margin: 0;
+                padding: 0;
+            }
+            h1{
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #search{
+                margin: 0;
+                padding: 0;
+                display: flex;
+                width: 10vw;
+            }
+        }
+        @media only screen and (max-width: 300px) {
+            #search{
+                width: 10vw;
+            }
+        }
         h1 {
             color: #e34949;
             text-align: center;
             text-decoration: underline;
         }
 
-        #search {
-            width: 200vh;
-            margin: 49px;
-            padding-left: 35px;
+       #search {
+            width: 90vw;
+            margin-right: 3vw;
+            margin-left: 3vw;
+            margin-top: 3vh;
+            padding-left: 3vw;
             height: 8vh;
             border-radius: 10px;
         }

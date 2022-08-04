@@ -1,85 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!DOCTYPE html>
-<hmtl>
-   
-<style>
-  #trendingwordmeanings{
-    
-  }
-  #Wordssearch{
-    width: 450px;
-    font-size: 20px;
-    height: 30px;
-    align-content: center;
-    color: #130b0b36;
-  }
-  h6{
-      text-decoration: Bold;
-      font-size: 30px;
-      text-align: center;
-    
-  }
-  #Wordmeaningsid{
-                  background-color:antiquewhite ;
-  
-  }
-  .Buttonsofsearch{
-    width: 33px;
-    display: inline;
-    height: 28px;
-    background-color:rgb(0,0,0);
-  }
-</style>
-  <h6>Word Meanings</h6>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Meanings</title>
+    <style>
+        h1 {
+            color: #e34949;
+            text-align: center;
+            text-decoration: underline;
+        }
 
-<body id="Wordmeaningsid">
+        #search {
+            width: 200vh;
+            margin: 49px;
+            padding-left: 35px;
+            height: 8vh;
+            border-radius: 10px;
+        }
 
-  
-    <header>
-        <nav>
-                <div style="padding:5px;" >
-                    <input type="search" placeholder="Search a Word" id="Wordssearch">
+        dt,
+        dd {
+            padding: 5px;
+        }
+
+        .btn {
+            color: blue;
+            background-color: aqua;
+            width: 10vw;
+            height: 6vh;
+            margin: 1.3vh;
+        }
+
+        .btn:hover {
+            cursor: pointer;
+            background-color: antiquewhite;
+        }
+        #hashtag{
+            height:6vh;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Word Meanings</h1>
+
+    <body>
+        <header>
+            <nav>
+                <div>
+                    <input type="search" placeholder="Search... " id="search">
                 </div>
             </nav>
-    </header>
-    <div>
-       <h2 style="color:red; text-decoration:underline;">Trending Meanings</h2>
-      <marquee id="trendingwordmeanings">
-        <p>
-            help <br>
-            please<br>
-            somehow<br>
-            well<br>
-            this<br>
-            is<br>
-            a<br>
-            test<br>
-        </p>
-        </marquee>
-</div>
-<div>
-    <dl>
-        <dt>Browse Dictionary</dt>
-        <dd>Search through our dictionary and word banks.<br>
-         Check out our collection of words, defination, slangs, word origin and a lot more.</dd>
-    </dl>
-    <div class="Buttonsofsearch">
-         <input type="button" id="#" value="#">
-        <input type="button" id="ABC" value="ABC">
-        <input type="button" id="DEF" value="DEF">
-        <input type="button" id="IJK" value="IJK">
-        <input type="button" id="LMN" value="LMN">
-        <input type="button" id="OPQ" value="OPQ">
-        <input type="button" id="RST" value="RST">
-        <input type="button" id="UVW" value="UVW">
-        <input type="button" id="XYZ" value="XYZ">
-    </div>
-    </div>
-</div>
-</body>
-</hmtl>
+        </header>
+        <main>
+            <div>
+                <dl>
+                    <dt style="color: green; font-size:  5vh; padding: 3px;">Browse Dictionary</dt>
+                    <dd>Search through our dictionary and word banks.<br>
+                        Check out our collection of words, defination, slangs, word origin and a lot more.</dd>
+                </dl>
+            </div>
+            <div class="Buttonsofsearch">
+                <input type="button" id="hashtag" value="#">
+                <input type="button" class="btn" value="ABC">
+                <input type="button" class="btn" value="DEF">
+                <input type="button" class="btn" value="IJK">
+                <input type="button" class="btn" value="LMN">
+                <input type="button" class="btn" value="OPQ">
+                <input type="button" class="btn" value="RST">
+                <input type="button" class="btn" value="UVW">
+                <input type="button" class="btn" value="XYZ">
+            </div>
+            <div>
+                <h2 style="color:red; text-decoration:underline;">Trending Meanings</h2>
+                <ul>
+                    <li>Help </li>
+                    <li>Please</li>
+                    <li>Somehow</li>
+                    <li>Well</li>
+                    <li>This</li>
+                    <li>Is</li>
+                    <li>A</li>
+                    <li>Test</li>
+                </ul>
+            </div>
 
-     
+        </main>
+    </body>
     </hmtl>

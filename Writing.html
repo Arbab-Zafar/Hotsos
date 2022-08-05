@@ -1,27 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Writing</title>
     <style>
-        #search {
-            width: 200vh;
-            margin: 49px;
-            padding-left: 35px;
-            height: 8vh;
-            border-radius: 10px;
+        h2 {
+            color: green;
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        #format {
+            margin: 10px 37vw;
+            height: 70vh;
+        }
+
+        .format {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img1 {
+            height: 90vh;
+            margin: 10px 190px;
+            display: inline-block;
+            width: 350px;
+        }
+
+        .img2 {
+            height: 90vh;
+            margin: 10px 0px;
+            display: inline-block;
+            width: 350px;
+        }
+
+        #img1 {
+            height: 80vh;
+            border: 3px solid red;
+        }
+
+        #img2 {
+            height: 80vh;
+        }
+
+        #but1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 130px;
+           border-radius: 5px;
+           height: 7vh;
+           width: 6vw;
+           background:linear-gradient(rgb(232, 72, 72),rgb(89, 89, 225));
+           color:white;
+        }
+        #but2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 130px;
+           border-radius: 5px;
+           height: 7vh;
+           width: 6vw;
+           background:linear-gradient(rgb(232, 72, 72),rgb(89, 89, 225));
+           color:white;}
+        button:hover{
+            background: linear-gradient(rgb(89, 232, 89),rgb(248, 248, 109));
+        }
+        p{
+            font-size: larger;
+            text-align: center;
+            color: rgb(203, 141, 8);
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1 style="color:#e34949; text-align: center; text-decoration: underline;">Writing</h1>
     </header>
     <main>
-        <div>
-            <input type="search" placeholder="Search... " id="search">
+        <h2>Application Format</h2>
+        <div class="format"><img id="format" src="/Images/appli.webp" alt="" height="100px"></div>
+        <h2>Select One</h2>
+        <div class="img1"> 
+            <p>Prior Information</p><img id="img1"
+                src="https://myleaveapplication.com/wp-content/uploads/2020/04/Write-an-Application-For-Absent-in-School.jpg"
+                alt="" height="100px">
+            <button id="but1">SELECT</button>
         </div>
+        <div class="img2">
+            <p>Post Information</p><img id="img2"
+                src="https://blogger.googleusercontent.com/img/a/AVvXsEh4xF5ms63ixPRl3WVqV9kfx5367PRNS6ftkFGWwwpU2wxfzBSWryawqNUqwiFC7F8l4W-baaMsIAu1Y_uQpiEmg77gZ-yDJtLx8TM1M1tFUVaYebMN5LE7gK3rrjIz58qObjDB1YO3zra2LWxlcPktErG5ea6pTtGxfJFYYTakP1FI7_kfENddhi_lZQ=w1600"
+                alt="" height="100px">
+            <button id="but2">SELECT</button>
+        </div>
+    </main>
 </body>
+
 </html>

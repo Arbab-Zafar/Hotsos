@@ -13,10 +13,10 @@
         }
 
         .button {
-            margin: 20px 35px 20px 10px;
-            height: 42px;
+          margin:6px 37px;
+           border-radius:10px;
+            height: 6.5vh;
             width: 59px;
-            border-radius: 0;
             border: solid white;
             background-color: #8686fb;
             color: white;
@@ -29,10 +29,10 @@
         }
 
         .button2 {
-            margin: 20px 35px 20px 0;
-            height: 42px;
+           margin:6px 37px;
+           border-radius:10px;
+            height:6.5vh;
             width: 59px;
-            border-radius: 0;
             border: solid white;
             background-color: #8686fb;
             color: white;
@@ -45,10 +45,11 @@
         }
 
         .button3 {
-            margin: 20px 35px 20px 102px;
-            height: 42px;
+            margin:6px 37px;
+            border-radius:10px;
+            width:80px;
+            height:6.5vh;
             /* width: 59px; */
-            border-radius: 0;
             border: solid white;
             background-color: #8686fb;
             color: white;
@@ -61,10 +62,10 @@
         }
 
         .button4 {
-            margin: 20px 35px 20px 35px;
-            height: 42px;
+            margin:6px 37px;
+            border-radius:10px;
+            height:6.5vh;
             width: 59px;
-            border-radius: 0;
             border: solid white;
             background-color: #8686fb;
             color: white;
@@ -77,10 +78,13 @@
         }
 
         #search {
-            height: 35px;
-            width: 555px;
-            border: 2px solid #8686fb;
-            border-radius: 3px;
+            width: 90vw;
+            margin-right: 3vw;
+            margin-left: 3vw;
+            margin-top: 3vh;
+            padding-left: 3vw;
+            height: 8vh;
+            border-radius: 10px;
         }
     
 
@@ -90,7 +94,8 @@
             display: flex;
             justify-content: center;
             font-size: 47px;
-            color: rgb(59, 186, 198);
+            color:  #e34949;
+            text-decoration: underline;
 
         }
 
@@ -113,8 +118,7 @@
             padding: 0px 0 4px;
             display: flex;
             justify-content: center;
-            color: red;
-            text-decoration: underline;
+            color:rgb(59, 186, 198);
 
         }
 
@@ -138,25 +142,30 @@
         } */
         #feedbackinput {
             margin: 60px 0 30px 119px;
-            height: 90px;
-            width: 331px;
+            height: 48px;
+            width: 77%;
             font-size: 14px;
             border: 2px solid blue;
             border-radius: 16px;
+        }
+        nav{
+            background-color: #8686fb;
+            height: 10vh;
+
         }
     </style>
 </head>
 
 <body>
     <header>
+        <nav>
         <button class="button">
             Home
         </button>
         <button class="button2">
             Contact
         </button>
-        <input id="search" type="search" placeholder="search">
-
+        
         <button class="button3">
             Dark Mode
         </button>
@@ -164,12 +173,15 @@
         <button class="button4">
             More
         </button>
+    </nav>
     </header>
+
     <main>
         <h1 id="vocabolory3">Essay</h1>
+        <input id="search" type="search" placeholder="search">
         <div class="mostsearched">
                  
-                <th>Most Searched</th>
+            <th>Most Searched</th>
        </div>
         <div class="container1">
             <h1 class="topic">Water cycle essay</h1>
@@ -241,7 +253,7 @@
     <footer>
         <div class="container2">
            
-            <input id="feedbackinput" type="text" placeholder="     give your feedback">
+            <input id="feedbackinput" type="text" placeholder="     Give your Feedback here....">
     </footer>
 </body>
 

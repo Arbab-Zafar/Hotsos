@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <style>
+        body{
+            font-size: larger;
+            color: rgb(86, 4, 174);
+
+        }
+        #content {
+            width: 42vw;
+            height: 22vh;
+            border: 2px solid rgb(229, 176, 255);  
+        }
+        .content{
+            width: 931px;
+            height: 132px;
+        }
+
+        #schooladdress {
+            width: 41vw;
+            height: 8vh;
+            border: 2px solid rgb(229, 176, 255);
+            
+
+        }
+
+        #schoolname {
+            width: 32vw;
+            height: 8vh;
+            border: 2px solid rgb(229, 176, 255);
+            
+
+        }
+
+        #subject {
+            width: 50vw;
+            height: 7vh;
+            border: 2px solid rgb(229, 176, 255);
+            
+
+        }
+
+        input {
+            border-radius: 6px;
+            border: 2px solid rgb(229, 176, 255);
+            margin: 10px;
+background-color: rgb(240, 240, 250);
+        }
+
+        h1 {
+            text-align: center;
+            color: #e34949;
+            text-decoration: underline;
+        }
+
+        #all,
+        #whom {
+            width: 20vw;
+            height: 5vh;
+            border: 2px solid rgb(229, 176, 255);  
+        }
+input:hover{
+    background-color: rgb(251, 245, 238);
+}
+        #date {
+            width: 8vw;
+            height: 5vh;
+            border-radius: 6px;
+            border: 2px solid rgb(229, 176, 255);
+            
+
+        }
+
+        #mon1 {
+            width: 12vw;
+            height: 5vh;
+            border-radius: 6px;
+            border: 2px solid rgb(229, 176, 255);
+            
+
+        }
+
+        #year {
+            width: 12vw;
+            height: 5vh;
+            border-radius: 6px;
+            border: 2px solid rgb(229, 176, 255);
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fill these information to get the the application</h1>
+    <form action="">
+        Full Name: <input type="text" placeholder="" id="all"><br><br>
+        <label for="class">Class</label>
+        <input list="classes" id="all">
+        <datalist id="classes">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value="5">
+            <option value="6">
+            <option value="7">
+            <option value="8">
+            <option value="9">
+            <option value="10">
+        </datalist>
+        Section: <input list="sect" name="sect" id="all">
+        <datalist id="sect">
+            <option value="A">
+            <option value="B">
+            <option value="C">
+            <option value="D">
+            <option value="E">
+            <option value="F">
+            <option value="G">
+            <option value="H">
+            <option value="I">
+        </datalist>
+        <br><br>
+        Roll No.: <input type="number" placeholder="" id="all"><br><br>
+        Enter whom you are writing: <input list="whom" name="whom" placeholder="" id="all">
+        <datalist id="whom">
+            <option value="Principal"></option>
+            <option value="Head Master"></option>
+
+            <option value="Class Teacher"></option>
+        </datalist>
+        <br><br>
+        Enter your Address: <input type="text" placeholder="" id="all" style="width:50vw;"><br><br>
+        <label for="date"> Choose Today's Date:</label>
+        <select id="date">
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+        </select>
+        <label for="mon1">Choose Month: </label>
+        <select id="mon1">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+        <label>Choose a year:</label>
+        <select id="year">
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+        </select>
+        <br><br>
+        Enter the subject: <input type="text" placeholder="" id="subject"><br><br>
+        <div class="content">Enter the content of Application: <input type="textarea" id="content"></div><br><br>
+        Enter the name of your school: <input type="text" placeholder="" id="schoolname"><br><br>
+        Enter address of your school: <input type="text" placeholder="" id="schooladdress"><br><br>
+        Enter the city in which your school is loacetd: <input type="text" placeholder="" id="all"><br><br>
+        Enter the city in which you live: <input type="text" placeholder="" id="all">
+    </form>
+</body>
+
+</html>

@@ -5,196 +5,522 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Writing</title>
+    <title>Application</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        
-        main{
-            min-height: calc(100vh- 66px- 12vh);
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans&family=Poppins:wght@300&family=Roboto:wght@300;400;700&display=swap');
 
-        /* header{
-            background-color:rgb(30, 67, 135);
-        } */
-
-        nav {
-            /* margin: 0 0 0 5; */
-            padding: 0 0 0 8px;
-            height: 66px;
-            width: auto;
-            background-color: #4bd2a0;
+        body {
+            font-family: 'Lato', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'PT Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
         }
 
-        nav ul {
-            display: flex;
-            justify-content: flex-start;
+        @media only screen and (max-width: 790px) {
+            body {
+                background-color: rgb(204, 229, 249);
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            #all.name {
+                width: 30vw;
+                height: 4vh;
+            }
+
+            #all.classes {
+                width: 14vw;
+                height: 4vh;
+            }
+
+            #all.sect {
+                width: 12vw;
+                height: 4vh;
+            }
+
+            #all.roll {
+                width: 12vw;
+                height: 4vh;
+            }
+
+            #all.whom {
+                width: 30vw;
+                height: 4vh;
+            }
+
+            #all.address {
+                width: 35vw;
+                height: 4vh;
+            }
+
+            #date.date {
+                width: 8vw;
+                height: 4vh;
+                margin-right: 20px;
+            }
+
+            #mon1.month {
+                width: 15vw;
+                height: 4vh;
+                position: relative;
+                margin-right:
+            }
+
+            #subject.sub {
+                width: 50vw;
+                height: 4vh;
+            }
+
+            #content.cont {
+                height: 15vh;
+                width: 40vw;
+            }
+
+            #c.content {
+                height: 14vh;
+            }
+
+            #lab.lob {
+                position: relative;
+                bottom: -39px;
+                margin-right: 11px;
+            }
+
+            #schoolname.schoolname {
+                width: 30vw;
+                height: 4vh;
+            }
+
+            #schooladdress.schooladdress {
+                width: 30vw;
+                height: 4vh;
+            }
+
+            #all.schoolcity {
+                width: 30vw;
+                height: 4vh;
+            }
+
+            #all.city {
+                width: 30vw;
+                height: 4vh;
+            }
+
+            #submit.subm {
+                position: relative;
+                left: 250px;
+                width: 15vw;
+            }
+
+            .yrs {
+                width: 28vw;
+                height: 3vh;
+                display: inline-block;
+            }
+
+            h1 {
+                text-align: center;
+            }
         }
 
-        .li {
-            list-style: none;
-            padding: 20px 15px 0 0;
-            /* padding: ; */
+        @media only screen and (max-width: 550px) {
 
+            body {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            h1 {
+                text-align: center;
+
+            }
+
+            .yrs {
+                position: relative;
+                left: 0px;
+                margin-bottom: 30px;
+                margin-top: 30px;
+            }
+
+            #subject.sub {
+                width: 35vw;
+            }
+
+            #content.cont {
+                width: 25vw;
+                height: 10vh;
+            }
+
+            #lab.lob {
+                position: relative;
+                bottom: -28px;
+            }
+
+            #c.content {
+                height: 7vh;
+                margin-right: 0;
+            }
+
+            #submit.subm {
+                position: relative;
+                left: 170px;
+            }
+        }
+
+        @media only screen and (max-width: 470px) {
+            #date.date {
+                width: 10vw;
+                height: 4vh;
+                margin-right: 20px;
+            }
+
+            #mon1.month {
+                width: 20vw;
+                height: 4vh;
+                position: relative;
+                margin-right:
+            }
+        }
+
+        @media only screen and (max-width: 470px) {
+            #all.name {
+                width: 45vw;
+                height: 4vh;
+            }
+
+            #all.classes {
+                width: 20vw;
+                height: 4vh;
+            }
+
+            #all.sect {
+                width: 18vw;
+                height: 4vh;
+            }
+
+            #all.roll {
+                width: 20vw;
+                height: 4vh;
+            }
+
+            #all.whom {
+                width: 50vw;
+                height: 4vh;
+            }
+
+            #all.address {
+                width: 50vw;
+                height: 4vh;
+            }
+
+            #date.date {
+                width: 18vw;
+                height: 4vh;
+                margin-right: 20px;
+            }
+
+            #mon1.month {
+                width: 30vw;
+                height: 4vh;
+                position: relative;
+                margin-right:
+            }
+
+            .yrs {
+                width: 50vw;
+                height: 5vh;
+                margin-bottom: 0;
+                margin-left: 20px;
+            }
+
+            #year.ys {
+                width: 22vw;
+            }
+
+            #content.cont {
+                position: relative;
+                width: 52vw;
+                height: 11vh;
+                bottom: 82px;
+                left: 103px;
+            }
+
+            #lab.lob {
+                position: relative;
+                bottom: 14px;
+                display: inline-block;
+                width: 37vw;
+                height: 5vh;
+            }
+
+            #schoolname.schoolname {
+                width: 50vw;
+                height: 4vh;
+            }
+
+            #schooladdress.schooladdress {
+                width: 50vw;
+                height: 4vh;
+            }
+
+            #all.schoolcity {
+                width: 35vw;
+                height: 4vh;
+            }
+
+            #all.city {
+                width: 35vw;
+                height: 4vh;
+            }
+
+            #submit.subm {
+                position: relative;
+                left: 90px;
+                width: 30vw;
+            }
+
+            .yrs {
+                width: 28vw;
+                height: 3vh;
+                display: inline-block;
+            }
+
+            h1 {
+                text-align: center;
+            }
+        }
+
+        body {
+            font-size: larger;
+            color: rgb(86, 4, 174);
 
         }
-        .li:hover{
-            font-weight: bolder;
+
+        #content {
+            position: absolute;
+            width: 42vw;
+            height: 24vh;
+            border: 2px solid rgb(229, 176, 255);
+            border-radius: 10px;
+            background-color: rgb(245, 245, 245)
         }
 
-        #dark-mode {
-            padding: 20px 15px 0 15px;
+        #content:hover {
+            background-color: rgb(251, 245, 238);
+        }
+
+        .content {
+            width: 80vw;
+            height: 24vh;
+        }
+
+        #schooladdress {
+            width: 41vw;
+            height: 8vh;
+            border: 2px solid rgb(217, 157, 247);
+        }
+
+        #submit {
+            font-size: medium;
+            font-weight: 700;
+            height: 6vh;
+            width: 8vw;
+            position: absolute;
+            left: 500px;
+            margin-bottom: 100px;
+            background: linear-gradient(rgb(245, 132, 132), rgb(156, 156, 245));
+            color: white;
+        }
+
+        #submit:hover {
+            background: linear-gradient(rgb(129, 233, 129), rgb(250, 250, 132));
+        }
+
+        #schoolname {
+            width: 32vw;
+            height: 8vh;
+            border: 2px solid rgb(229, 176, 255);
+        }
+
+        #subject {
+            width: 50vw;
+            height: 7vh;
+            border: 2px solid rgb(229, 176, 255);
         }
 
         input {
-            height: 40px;
-            width: 767px;
-            border-radius: 9px;
-            border: 2px solid white;
-        }
-
-        
-
-        .input {
-            padding: 10px 0 0 0;
-        }
-
-        h2 {
-            color: green;
-            text-decoration: underline;
-            text-align: center;
+            border-radius: 6px;
+            border: 2px solid rgb(229, 176, 255);
+            margin: 10px;
+            background-color: rgb(245, 245, 245);
         }
 
         h1 {
             text-align: center;
+            color: #e34949;
             text-decoration: underline;
         }
 
-        #format {
-            margin: 10px 37vw;
-            /* height: 70vh; */
+        #all,
+        #whom {
+            width: 20vw;
+            height: 5vh;
+            border: 2px solid rgb(235, 197, 254);
         }
 
-        .format {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        #lab {
+            position: relative;
+            bottom: -59px;
+            margin-right: 11px;
         }
 
-        .img1 {
-            /* height: 90vh; */
-            margin: 10px 190px;
+        input:hover {
+            background-color: rgb(251, 245, 238);
+        }
+
+        #date {
+            width: 8vw;
+            height: 5vh;
+            border-radius: 6px;
+            border: 2px solid rgb(229, 176, 255);
+        }
+
+        #mon1 {
+            width: 12vw;
+            height: 5vh;
+            border-radius: 6px;
+            border: 2px solid rgb(229, 176, 255);
+        }
+
+        #year {
+            width: 12vw;
+            height: 5vh;
+            border-radius: 6px;
+            border: 2px solid rgb(229, 176, 255);
+        }
+
+        .yrs {
             display: inline-block;
-            width: 350px;
-        }
 
-        .img2 {
-            height: 90vh;
-            margin: 10px 0px;
-            display: inline-block;
-            width: 350px;
         }
-
-        #img1 {
-            height: 80vh;
-            border: 3px solid red;
-        }
-
-        #img2 {
-            height: 80vh;
-        }
-
-        #but1 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 10px 130px;
-            border-radius: 5px;
-            height: 7vh;
-            width: 6vw;
-            background: linear-gradient(rgb(244, 128, 128), rgb(145, 145, 238));
-            color: white;
-        }
-
-        #but2 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 10px 130px;
-            border-radius: 5px;
-            height: 7vh;
-            width: 6vw;
-            background: linear-gradient(rgb(244, 128, 128), rgb(145, 145, 238));
-            color: white;
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
-        #but1:hover {
-            background: linear-gradient(rgb(129, 233, 129), rgb(250, 250, 132));
-        }
-
-        #but2:hover {
-            background: linear-gradient(rgb(129, 233, 129), rgb(250, 250, 132));
-        }
-
-        p {
-            font-size: larger;
-            text-align: center;
-            color: rgb(203, 141, 8);
-        }
-        footer{
-            height: 8vh;
-            background-color:#4bd2a0 ;
-            
-        }
-        #footer{
-            color: white;
-            padding-top:8px;
-        }
-        
     </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li class="li"> <a href="home.html">Home</a></li>
-                <li class="li"> <a href="contact.html">Contact</a></li>
-                <div class="input"> <input type="search" placeholder="Search....."></div>
-                <li class="li" id="dark-mode"> <a href="dark.html">Dark Mode</a></li>
-                <li class="li"> <a href="login.html">LOG-IN</a></li>
-                <li class="li"> <a href="more.html">More</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1 style="color:#e34949; text-align: center; text-decoration: underline;">Writing</h1>
-        <h2>Application Format</h2>
-        <div class="format"><img id="format" src="/Images/appli.webp" alt="" height="100px"></div>
-        <h2>Select One</h2>
-        <div class="img1">
-            <p>Prior Information</p><img id="img1"
-                src="https://myleaveapplication.com/wp-content/uploads/2020/04/Write-an-Application-For-Absent-in-School.jpg"
-                alt="" height="100px">
-            <a href="/Html files/format1.html"> <button id="but1">SELECT</button></a>
+    <h1>Fill these information to get the the application</h1>
+    <form action="">
+        Full Name: <input type="text" placeholder="" class="name" id="all"><br><br>
+        <label for="class">Class</label>
+        <input list="classes" id="all" class="classes">
+        <datalist id="classes">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value="5">
+            <option value="6">
+            <option value="7">
+            <option value="8">
+            <option value="9">
+            <option value="10">
+        </datalist>
+        Section: <input list="sect" name="sect" id="all" class="sect">
+        <datalist id="sect">
+            <option value="A">
+            <option value="B">
+            <option value="C">
+            <option value="D">
+            <option value="E">
+            <option value="F">
+            <option value="G">
+            <option value="H">
+            <option value="I">
+        </datalist>
+        <br><br>
+        Roll No.: <input type="number" placeholder="" id="all" class="roll"><br><br>
+        Enter whom you are writing: <input list="whom" name="whom" placeholder="" id="all" class="whom">
+        <datalist id="whom">
+            <option value="Principal"></option>
+            <option value="Head Master"></option>
+
+            <option value="Class Teacher"></option>
+        </datalist>
+        <br><br>
+        Enter your Address: <input type="text" placeholder="" id="all" class="address"><br><br>
+        <label for="date"> Today's Date:</label>
+        <select id="date" class="date">
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+        </select>
+        <label for="mon1" class="mon" id="4">Month: </label>
+        <select id="mon1" class="month">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+        <div class="yrs"><label class="year"> Year:</label>
+            <select id="year" class="ys">
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+            </select>
         </div>
-        <div class="img2">
-            <p>Post Information</p><img id="img2"
-                src="https://blogger.googleusercontent.com/img/a/AVvXsEh4xF5ms63ixPRl3WVqV9kfx5367PRNS6ftkFGWwwpU2wxfzBSWryawqNUqwiFC7F8l4W-baaMsIAu1Y_uQpiEmg77gZ-yDJtLx8TM1M1tFUVaYebMN5LE7gK3rrjIz58qObjDB1YO3zra2LWxlcPktErG5ea6pTtGxfJFYYTakP1FI7_kfENddhi_lZQ=w1600"
-                alt="" height="100px">
-            <a href="/Html files/format2.html"> <button id="but2">SELECT</button></a>
-        </div>
-    </main>
-    <footer>
-        <p id="footer">Copyright &copy; HOTSOS.com</p>
-    </footer>
+        <br><br>
+        Enter the subject: <input type="text" class="sub" placeholder="" id="subject"><br><br>
+        <div class="content" id="c"><label id="lab" class="lob"> Enter the content of Application:</label> <textarea
+                name="text" id="content" cols="30" class="cont" rows="10"></textarea></div><br><br>
+        Enter the name of your school: <input type="text" class="schoolname" placeholder="" id="schoolname"><br><br>
+        Enter address of your school: <input type="text" class="schooladdress" placeholder=""
+            id="schooladdress"><br><br>
+        Enter the city in which your school is loacetd: <input type="text" class="schoolcity" placeholder=""
+            id="all"><br><br>
+        Enter the city in which you live: <input type="text" placeholder="" class="city" id="all"><br><br>
+        <input type="submit" name="Submit" class="subm" id="submit">
+    </form>
 </body>
 
 </html>

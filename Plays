@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        p{
+            text-align: center;
+            text-decoration: bold;
+            color: red;
+        }
+    </style>
+    <div class="butondiv">
+        <button type="button" class="botton coc">Home</button>
+        <button type="button" class="botton coc">DarkMode</button>
+        <button type="button" class="botton coc">Contact</button>
+        <button type="button" class="botton coc">More</button>
+    </div>
+<h1>
+Skits
+</h1>
+<body>
+    <div class="sorchbar">
+        <input type="search" placeholder="Search" id="sorchthing">
+    </div>
+    <div class="skits">
+        <h3>Head</h3>
+    Scene : something something
+    <br>
+       Person1: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, maiores assumenda recusandae beatae doloremque velit modi, 
+        eos vel in facere hic suscipit aliquam reiciendis enim voluptate nemo? Perferendis at quaerat illo fugiat libero similique cum 
+        et excepturi eveniet ducimus sint quis commodi, tempora veritatis quia, ex magni maxime repellendus assumenda. Nostrum alias 
+       <br>
+        Person2: architecto vel fugiat repellat facilis, harum consectetur, laudantium iusto incidunt ratione explicabo voluptates neque 
+        voluptatem suscipit. Temporibus, placeat. Eum blanditiis praesentium necessitatibus voluptatibus vero dignissimos dolor, 
+        exercitationem nihil deleniti quibusdam dolores ratione ea delectus minus velit tempore rerum molestiae consequatur fuga 
+       <br>
+        Person3: iusto repudiandae. Enim, animi, aperiam deleniti ratione suscipit adipisci corrupti laboriosam explicabo, repellendus repellat 
+        quam laborum deserunt dolorum libero eligendi voluptatem?
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Parachute</h3>
+    <br>
+    Scene: Sporting goods store
+    <br>
+    Cast: Clerk, Customer
+    <br>
+    Optional Prop: Knapsack rigged up with three cords dangling from it (parachute)
+    <br>
+    The customer walks up to the counter and asks for their best parachute.
+    <br>
+    Clerk: Well, we have a pretty big variety, but this is probably our best one. (Hands it to customer.)    <br>
+    Customer: What makes this one the best?    <br>
+    Clerk: Well, see here, this is the rip cord.    <br>
+    Customer: Yeah?    <br>
+    Clerk: When you pull that, the parachute opens.    <br>
+    Customer: What’s this other cord?    <br>
+    Clerk: That’s the reserve chute, in case the first one doesn’t open, you have a back-up.    <br>
+    Customer: What’s the third cord for?    <br>
+    Clerk: That’s the reserve, reserve chute. The back-up to the back-up.    <br>
+    Customer: But what if all three of them don’t open?    <br>
+    Clerk: Bring it back and we’ll give you a full refund.    <br>
+    <br>
+    ---THE-END---
+    </div>
+    <div class="divfeedback">
+         Please submit a feedback
+        <input type="text" placeholder="Give here">
+    </div>
+    <P>ARBAB ABHI MAI CSS NHI DALA HU SOCHNA BHI NHI RESPONSIVE BANANE AUR CSS KA KAM MAI KARUNGA</P>
+</body>
+</html>

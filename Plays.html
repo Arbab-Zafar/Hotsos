@@ -1,25 +1,79 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
     <style>
-        p{
-            text-align: center;
-            text-decoration: bold;
-            color: red;
+    .bottoncoc{
+    height: 40px;
+    background-color: aquamarine;  
+    width: 25%;
+    float: left;
+    border-width: 0px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+    .bottoncocs{
+        height: 40px;
+        background-color: aquamarine;
+        width: 25%;
+        float: right;
+        border-width: 0px;
+        color: rgb(255, 255, 255);
+        font-size: 25px;
         }
+    .butondiv{
+        display: inline-flex;
+        background-color: aquamarine;
+        justify-content: center;
+        width: 100%;
+
+    }
+    .sorchbar{
+        width: 35%;
+        height: 40px;
+        border-radius: 8px;
+        border-width: 3px;
+        color: rgb(255, 255, 255);
+    }
+    #sorchthing{
+        width: 390px;
+        height: 40px;
+        border-radius: 8px;
+        border-width: 3px;
+        border-color: rgb(7, 193, 255);
+    }
+    h1{
+        text-align: center;
+        text-decoration: underline;
+        color: rgb(199, 224, 37);
+
+    }
+    h3{ color: bisque;
+        text-decoration: underline;
+
+    }
     </style>
+    <script>
+     function buttono(){
+        x.style.height = "64px";
+        x.style.width = "64px";
+     }
+    </script>
     <div class="butondiv">
-        <button type="button" class="botton coc">Home</button>
-        <button type="button" class="botton coc">DarkMode</button>
-        <button type="button" class="botton coc">Contact</button>
-        <button type="button" class="botton coc">More</button>
+        <button type="button" class="bottoncoc" onmouseover="buttono()">Home</button>
+        <button type="button" class="bottoncoc" onmouseover="buttono()">DarkMode</button>
+        <div class="sorchbar">
+            <input type="search" placeholder="Search" id="sorchthing" >
+        </div>
+        <button type="button" class="bottoncocs" onmouseover="buttono()">Contact</button>
+        <button type="button" class="bottoncocs" onmouseover="buttono()">More</button>
+  
+  
     </div>
 <h1>
 Skits
 </h1>
-<body>
-    <div class="sorchbar">
-        <input type="search" placeholder="Search" id="sorchthing">
-    </div>
+<body bgcolor="grey">
+
     <div class="skits">
         <h3>Head</h3>
     Scene : something something

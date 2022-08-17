@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotsos</title>
+    <title>"Best Website for Short Notes, Essays, Writing, Word Meanings etc"Hotsos</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans&family=Poppins:wght@300&family=Roboto:wght@300;400;700&display=swap');
 
@@ -32,6 +32,8 @@
             margin-bottom: 10px;
             line-height: 22px;
             font-size: 17px;
+            max-width: calc(100vw - 30vw);
+            display: inline-block;
         }
 
         * {
@@ -73,7 +75,7 @@
             border-bottom-left-radius: 6px;
             border: 2px solid white;
             position: relative;
-            padding-right: 0px;
+            padding-right: 10px;
             padding-left: 20px;
         }
 
@@ -123,6 +125,14 @@
             margin-right: 5px;
         }
 
+        a:hover {
+            color: rgb(165, 163, 163);
+        }
+
+        #ho {
+            text-decoration: underline;
+        }
+
         #sign {
             height: 20px;
             width: 20px;
@@ -147,17 +157,67 @@
             background-color: rgb(179, 239, 204);
             color: black;
         }
+
+        footer {
+            text-align: center;
+            background-color: rgb(45, 43, 43);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .image {
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 90vh;
+            width: 25vw;
+            float: right;
+            position: relative;
+            display: flex;
+        }
+
+        span {
+            color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 10vw;
+        }
+        .dark{
+            margin: 10px;
+            display: inline-block;
+        }
+        #darkmode{
+            color: black;
+            border: 1px solid grey;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        #head1{
+            position: relative;
+            top: -32px;
+        }
+        #head2{
+            position: relative;
+            bottom: 23px;
+        }
+        #para1.para{
+            position: relative;
+            bottom: 20px;
+        }
     </style>
 </head>
 
-<body>
+<body id="body">
     <header>
         <nav>
             <ul>
                 <ion-icon name="logo-octocat" id="logo"></ion-icon>
                 <li id="hot">Hotsos</li>
                 <ion-icon name="home" id="home"></ion-icon>
-                <a href="newhot.html">
+                <a href="newhot.html" id="ho">
                     <li class="list">Home</li>
                 </a>
                 <a href="Essay.html">
@@ -192,117 +252,209 @@
         </nav>
     </header>
     <main>
-        <h1>Latest Articles</h1>
-        <h2>Monkey Pox</h2>
-        <p class="paraGraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos atque voluptas vitae culpa
-            laudantium,
-            perferendis incidunt esse eveniet doloremque aliquid eius tempora nobis aut magnam accusantium repellendus
-            ea, aspernatur inventore! Modi quisquam itaque esse nemo incidunt harum minus illum, repudiandae vel nobis
-            nihil veritatis soluta blanditiis, commodi autem aliquam laudantium, iste eius suscipit consectetur facilis
-            assumenda. A sit minima, doloremque veritatis dolores possimus distinctio! Perspiciatis dicta quasi optio
-            blanditiis neque in modi ea consequuntur quo! Quibusdam quod deserunt aliquam consequuntur fugiat earum
-            nihil blanditiis voluptatem omnis eveniet dolor amet molestiae qui unde alias laborum assumenda, obcaecati
-            neque labore. Dolor, reprehenderit. Officiis quasi, excepturi inventore ad possimus, quia incidunt,
-            recusandae velit ratione asperiores quae eveniet. Nam quasi architecto ab pariatur laudantium hic iure, quo
-            doloribus nobis facilis maiores enim explicabo similique quibusdam facere tempore ipsum quaerat dolor earum
-            aliquid numquam impedit consequatur. Itaque explicabo alias dignissimos, quasi modi reprehenderit voluptatum
-            dicta ratione rerum aspernatur expedita quia, vero quos consequatur perspiciatis officia vitae, corporis
-            odit voluptas ex molestiae? Cum iure consequatur dignissimos odit provident consequuntur minima laboriosam
-            temporibus accusantium placeat ut accusamus animi maiores laborum, repudiandae molestias repellat
-            necessitatibus veniam voluptate? Optio, sint ex? Quia ratione in ut possimus atque, explicabo quaerat
-            doloremque neque necessitatibus nemo nihil ullam perferendis odit quidem quibusdam eaque asperiores
-            voluptates officiis accusamus! Eos impedit iste repudiandae ad iure quae numquam repellat, ea eligendi totam
-            nulla cupiditate. Nobis omnis, commodi labore rem sint adipisci facilis doloremque animi repellendus
-            voluptate iste dolor nemo, ipsam, dolorem similique alias nihil explicabo quidem. Minus, itaque? Perferendis
-            reiciendis, iure quos nostrum ipsam distinctio praesentium impedit eius quis neque dolorem aliquid est,
-            saepe, nam deserunt hic quibusdam dolorum a minima enim dicta! Repudiandae, quidem minima sunt praesentium
-            soluta eum adipisci sint libero. Quaerat nulla porro praesentium ratione architecto eligendi neque ex
-            aliquam iure optio? Ea, eius doloribus, maiores perferendis aut nam culpa saepe aliquid voluptatum a vel
-            officiis minima iure quisquam, amet totam officia asperiores deleniti soluta adipisci.</p>
+        <div class="dark">
+            <button id="darkmode" onclick="darkmode()">Dark mode</button>
+        </div>
+        <div id="1">
+            <h1 id="head1">Latest Articles</h1>
+            <h2 id="head2">Monkey Pox</h2>
+            <p class="para" id="para1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos atque voluptas vitae
+                culpa
+                laudantium,
+                perferendis incidunt esse eveniet doloremque aliquid eius tempora nobis aut magnam accusantium
+                repellendus
+                ea, aspernatur inventore! Modi quisquam itaque esse nemo incidunt harum minus illum, repudiandae vel
+                nobis
+                nihil veritatis soluta blanditiis, commodi autem aliquam laudantium, iste eius suscipit consectetur
+                facilis
+                assumenda. A sit minima, doloremque veritatis dolores possimus distinctio! Perspiciatis dicta quasi
+                optio
+                blanditiis neque in modi ea consequuntur quo! Quibusdam quod deserunt aliquam consequuntur fugiat earum
+                nihil blanditiis voluptatem omnis eveniet dolor amet molestiae qui unde alias laborum assumenda,
+                obcaecati
+                neque labore. Dolor, reprehenderit. Officiis quasi, excepturi inventore ad possimus, quia incidunt,
+                recusandae velit ratione asperiores quae eveniet. Nam quasi architecto ab pariatur laudantium hic iure,
+                quo
+                doloribus nobis facilis maiores enim explicabo similique quibusdam facere tempore ipsum quaerat dolor
+                earum
+                aliquid numquam impedit consequatur. Itaque explicabo alias dignissimos, quasi modi reprehenderit
+                voluptatum
+                dicta ratione rerum aspernatur expedita quia, vero quos consequatur perspiciatis officia vitae, corporis
+                odit voluptas ex molestiae? Cum iure consequatur dignissimos odit provident consequuntur minima
+                laboriosam
+                temporibus accusantium placeat ut accusamus animi maiores laborum, repudiandae molestias repellat
+                necessitatibus veniam voluptate? Optio, sint ex? Quia ratione in ut possimus atque, explicabo quaerat
+                doloremque neque necessitatibus nemo nihil ullam perferendis odit quidem quibusdam eaque asperiores
+                voluptates officiis accusamus! Eos impedit iste repudiandae ad iure quae numquam repellat, ea eligendi
+                totam
+                nulla cupiditate. Nobis omnis, commodi labore rem sint adipisci facilis doloremque animi repellendus
+                voluptate iste dolor nemo, ipsam, dolorem similique alias nihil explicabo quidem. Minus, itaque?
+                Perferendis
+                reiciendis, iure quos nostrum ipsam distinctio praesentium impedit eius quis neque dolorem aliquid est,
+                saepe, nam deserunt hic quibusdam dolorum a minima enim dicta! Repudiandae, quidem minima sunt
+                praesentium
+                soluta eum adipisci sint libero. Quaerat nulla porro praesentium ratione architecto eligendi neque ex
+                aliquam iure optio? Ea, eius doloribus, maiores perferendis aut nam culpa saepe aliquid voluptatum a vel
+                officiis minima iure quisquam, amet totam officia asperiores deleniti soluta adipisci.</p>
+            <div class="image">
+                <span>Images</span>
+            </div>
+        </div>
 
-        <h2>Sri Lanka Economic Crises</h2>
+        <div id="2">
+            <h2>Sri Lanka Economic Crises</h2>
 
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos atque voluptas vitae culpa laudantium,
-            perferendis incidunt esse eveniet doloremque aliquid eius tempora nobis aut magnam accusantium repellendus
-            ea, aspernatur inventore! Modi quisquam itaque esse nemo incidunt harum minus illum, repudiandae vel nobis
-            nihil veritatis soluta blanditiis, commodi autem aliquam laudantium, iste eius suscipit consectetur facilis
-            assumenda. A sit minima, doloremque veritatis dolores possimus distinctio! Perspiciatis dicta quasi optio
-            blanditiis neque in modi ea consequuntur quo! Quibusdam quod deserunt aliquam consequuntur fugiat earum
-            nihil blanditiis voluptatem omnis eveniet dolor amet molestiae qui unde alias laborum assumenda, obcaecati
-            neque labore. Dolor, reprehenderit. Officiis quasi, excepturi inventore ad possimus, quia incidunt,
-            recusandae velit ratione asperiores quae eveniet. Nam quasi architecto ab pariatur laudantium hic iure, quo
-            doloribus nobis facilis maiores enim explicabo similique quibusdam facere tempore ipsum quaerat dolor earum
-            aliquid numquam impedit consequatur. Itaque explicabo alias dignissimos, quasi modi reprehenderit voluptatum
-            dicta ratione rerum aspernatur expedita quia, vero quos consequatur perspiciatis officia vitae, corporis
-            odit voluptas ex molestiae? Cum iure consequatur dignissimos odit provident consequuntur minima laboriosam
-            temporibus accusantium placeat ut accusamus animi maiores laborum, repudiandae molestias repellat
-            necessitatibus veniam voluptate? Optio, sint ex? Quia ratione in ut possimus atque, explicabo quaerat
-            doloremque neque necessitatibus nemo nihil ullam perferendis odit quidem quibusdam eaque asperiores
-            voluptates officiis accusamus! Eos impedit iste repudiandae ad iure quae numquam repellat, ea eligendi totam
-            nulla cupiditate. Nobis omnis, commodi labore rem sint adipisci facilis doloremque animi repellendus
-            voluptate iste dolor nemo, ipsam, dolorem similique alias nihil explicabo quidem. Minus, itaque? Perferendis
-            reiciendis, iure quos nostrum ipsam distinctio praesentium impedit eius quis neque dolorem aliquid est,
-            saepe, nam deserunt hic quibusdam dolorum a minima enim dicta! Repudiandae, quidem minima sunt praesentium
-            soluta eum adipisci sint libero. Quaerat nulla porro praesentium ratione architecto eligendi neque ex
-            aliquam iure optio? Ea, eius doloribus, maiores perferendis aut nam culpa saepe aliquid voluptatum a vel
-            officiis minima iure quisquam, amet totam officia asperiores deleniti soluta adipisci.</p>
-        <h2>Ukrain And Ukrain War</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos atque voluptas vitae culpa laudantium,
-            perferendis incidunt esse eveniet doloremque aliquid eius tempora nobis aut magnam accusantium repellendus
-            ea, aspernatur inventore! Modi quisquam itaque esse nemo incidunt harum minus illum, repudiandae vel nobis
-            nihil veritatis soluta blanditiis, commodi autem aliquam laudantium, iste eius suscipit consectetur facilis
-            assumenda. A sit minima, doloremque veritatis dolores possimus distinctio! Perspiciatis dicta quasi optio
-            blanditiis neque in modi ea consequuntur quo! Quibusdam quod deserunt aliquam consequuntur fugiat earum
-            nihil blanditiis voluptatem omnis eveniet dolor amet molestiae qui unde alias laborum assumenda, obcaecati
-            neque labore. Dolor, reprehenderit. Officiis quasi, excepturi inventore ad possimus, quia incidunt,
-            recusandae velit ratione asperiores quae eveniet. Nam quasi architecto ab pariatur laudantium hic iure, quo
-            doloribus nobis facilis maiores enim explicabo similique quibusdam facere tempore ipsum quaerat dolor earum
-            aliquid numquam impedit consequatur. Itaque explicabo alias dignissimos, quasi modi reprehenderit voluptatum
-            dicta ratione rerum aspernatur expedita quia, vero quos consequatur perspiciatis officia vitae, corporis
-            odit voluptas ex molestiae? Cum iure consequatur dignissimos odit provident consequuntur minima laboriosam
-            temporibus accusantium placeat ut accusamus animi maiores laborum, repudiandae molestias repellat
-            necessitatibus veniam voluptate? Optio, sint ex? Quia ratione in ut possimus atque, explicabo quaerat
-            doloremque neque necessitatibus nemo nihil ullam perferendis odit quidem quibusdam eaque asperiores
-            voluptates officiis accusamus! Eos impedit iste repudiandae ad iure quae numquam repellat, ea eligendi totam
-            nulla cupiditate. Nobis omnis, commodi labore rem sint adipisci facilis doloremque animi repellendus
-            voluptate iste dolor nemo, ipsam, dolorem similique alias nihil explicabo quidem. Minus, itaque? Perferendis
-            reiciendis, iure quos nostrum ipsam distinctio praesentium impedit eius quis neque dolorem aliquid est,
-            saepe, nam deserunt hic quibusdam dolorum a minima enim dicta! Repudiandae, quidem minima sunt praesentium
-            soluta eum adipisci sint libero. Quaerat nulla porro praesentium ratione architecto eligendi neque ex
-            aliquam iure optio? Ea, eius doloribus, maiores perferendis aut nam culpa saepe aliquid voluptatum a vel
-            officiis minima iure quisquam, amet totam officia asperiores deleniti soluta adipisci.</p>
-        <h2>Corona Virus</h2>
-        <p id="endArticle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos atque voluptas vitae culpa
-            laudantium,
-            perferendis incidunt esse eveniet doloremque aliquid eius tempora nobis aut magnam accusantium repellendus
-            ea, aspernatur inventore! Modi quisquam itaque esse nemo incidunt harum minus illum, repudiandae vel nobis
-            nihil veritatis soluta blanditiis, commodi autem aliquam laudantium, iste eius suscipit consectetur facilis
-            assumenda. A sit minima, doloremque veritatis dolores possimus distinctio! Perspiciatis dicta quasi optio
-            blanditiis neque in modi ea consequuntur quo! Quibusdam quod deserunt aliquam consequuntur fugiat earum
-            nihil blanditiis voluptatem omnis eveniet dolor amet molestiae qui unde alias laborum assumenda, obcaecati
-            neque labore. Dolor, reprehenderit. Officiis quasi, excepturi inventore ad possimus, quia incidunt,
-            recusandae velit ratione asperiores quae eveniet. Nam quasi architecto ab pariatur laudantium hic iure, quo
-            doloribus nobis facilis maiores enim explicabo similique quibusdam facere tempore ipsum quaerat dolor earum
-            aliquid numquam impedit consequatur. Itaque explicabo alias dignissimos, quasi modi reprehenderit voluptatum
-            dicta ratione rerum aspernatur expedita quia, vero quos consequatur perspiciatis officia vitae, corporis
-            odit voluptas ex molestiae? Cum iure consequatur dignissimos odit provident consequuntur minima laboriosam
-            temporibus accusantium placeat ut accusamus animi maiores laborum, repudiandae molestias repellat
-            necessitatibus veniam voluptate? Optio, sint ex? Quia ratione in ut possimus atque, explicabo quaerat
-            doloremque neque necessitatibus nemo nihil ullam perferendis odit quidem quibusdam eaque asperiores
-            voluptates officiis accusamus! Eos impedit iste repudiandae ad iure quae numquam repellat, ea eligendi totam
-            nulla cupiditate. Nobis omnis, commodi labore rem sint adipisci facilis doloremque animi repellendus
-            voluptate iste dolor nemo, ipsam, dolorem similique alias nihil explicabo quidem. Minus, itaque? Perferendis
-            reiciendis, iure quos nostrum ipsam distinctio praesentium impedit eius quis neque dolorem aliquid est,
-            saepe, nam deserunt hic quibusdam dolorum a minima enim dicta! Repudiandae, quidem minima sunt praesentium
-            soluta eum adipisci sint libero. Quaerat nulla porro praesentium ratione architecto eligendi neque ex
-            aliquam iure optio? Ea, eius doloribus, maiores perferendis aut nam culpa saepe aliquid voluptatum a vel
-            officiis minima iure quisquam, amet totam officia asperiores deleniti soluta adipisci.</p>
+            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos atque voluptas vitae culpa
+                laudantium,
+                perferendis incidunt esse eveniet doloremque aliquid eius tempora nobis aut magnam accusantium
+                repellendus
+                ea, aspernatur inventore! Modi quisquam itaque esse nemo incidunt harum minus illum, repudiandae vel
+                nobis
+                nihil veritatis soluta blanditiis, commodi autem aliquam laudantium, iste eius suscipit consectetur
+                facilis
+                assumenda. A sit minima, doloremque veritatis dolores possimus distinctio! Perspiciatis dicta quasi
+                optio
+                blanditiis neque in modi ea consequuntur quo! Quibusdam quod deserunt aliquam consequuntur fugiat earum
+                nihil blanditiis voluptatem omnis eveniet dolor amet molestiae qui unde alias laborum assumenda,
+                obcaecati
+                neque labore. Dolor, reprehenderit. Officiis quasi, excepturi inventore ad possimus, quia incidunt,
+                recusandae velit ratione asperiores quae eveniet. Nam quasi architecto ab pariatur laudantium hic iure,
+                quo
+                doloribus nobis facilis maiores enim explicabo similique quibusdam facere tempore ipsum quaerat dolor
+                earum
+                aliquid numquam impedit consequatur. Itaque explicabo alias dignissimos, quasi modi reprehenderit
+                voluptatum
+                dicta ratione rerum aspernatur expedita quia, vero quos consequatur perspiciatis officia vitae, corporis
+                odit voluptas ex molestiae? Cum iure consequatur dignissimos odit provident consequuntur minima
+                laboriosam
+                temporibus accusantium placeat ut accusamus animi maiores laborum, repudiandae molestias repellat
+                necessitatibus veniam voluptate? Optio, sint ex? Quia ratione in ut possimus atque, explicabo quaerat
+                doloremque neque necessitatibus nemo nihil ullam perferendis odit quidem quibusdam eaque asperiores
+                voluptates officiis accusamus! Eos impedit iste repudiandae ad iure quae numquam repellat, ea eligendi
+                totam
+                nulla cupiditate. Nobis omnis, commodi labore rem sint adipisci facilis doloremque animi repellendus
+                voluptate iste dolor nemo, ipsam, dolorem similique alias nihil explicabo quidem. Minus, itaque?
+                Perferendis
+                reiciendis, iure quos nostrum ipsam distinctio praesentium impedit eius quis neque dolorem aliquid est,
+                saepe, nam deserunt hic quibusdam dolorum a minima enim dicta! Repudiandae, quidem minima sunt
+                praesentium
+                soluta eum adipisci sint libero. Quaerat nulla porro praesentium ratione architecto eligendi neque ex
+                aliquam iure optio? Ea, eius doloribus, maiores perferendis aut nam culpa saepe aliquid voluptatum a vel
+                officiis minima iure quisquam, amet totam officia asperiores deleniti soluta adipisci.</p>
+            <div class="image">
+                <span>Images</span>
+            </div>
+
+        </div>
+        <div id="3">
+            <h2>Ukrain And Ukrain War</h2>
+
+            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos atque voluptas vitae culpa
+                laudantium,
+                perferendis incidunt esse eveniet doloremque aliquid eius tempora nobis aut magnam accusantium
+                repellendus
+                ea, aspernatur inventore! Modi quisquam itaque esse nemo incidunt harum minus illum, repudiandae vel
+                nobis
+                nihil veritatis soluta blanditiis, commodi autem aliquam laudantium, iste eius suscipit consectetur
+                facilis
+                assumenda. A sit minima, doloremque veritatis dolores possimus distinctio! Perspiciatis dicta quasi
+                optio
+                blanditiis neque in modi ea consequuntur quo! Quibusdam quod deserunt aliquam consequuntur fugiat earum
+                nihil blanditiis voluptatem omnis eveniet dolor amet molestiae qui unde alias laborum assumenda,
+                obcaecati
+                neque labore. Dolor, reprehenderit. Officiis quasi, excepturi inventore ad possimus, quia incidunt,
+                recusandae velit ratione asperiores quae eveniet. Nam quasi architecto ab pariatur laudantium hic iure,
+                quo
+                doloribus nobis facilis maiores enim explicabo similique quibusdam facere tempore ipsum quaerat dolor
+                earum
+                aliquid numquam impedit consequatur. Itaque explicabo alias dignissimos, quasi modi reprehenderit
+                voluptatum
+                dicta ratione rerum aspernatur expedita quia, vero quos consequatur perspiciatis officia vitae, corporis
+                odit voluptas ex molestiae? Cum iure consequatur dignissimos odit provident consequuntur minima
+                laboriosam
+                temporibus accusantium placeat ut accusamus animi maiores laborum, repudiandae molestias repellat
+                necessitatibus veniam voluptate? Optio, sint ex? Quia ratione in ut possimus atque, explicabo quaerat
+                doloremque neque necessitatibus nemo nihil ullam perferendis odit quidem quibusdam eaque asperiores
+                voluptates officiis accusamus! Eos impedit iste repudiandae ad iure quae numquam repellat, ea eligendi
+                totam
+                nulla cupiditate. Nobis omnis, commodi labore rem sint adipisci facilis doloremque animi repellendus
+                voluptate iste dolor nemo, ipsam, dolorem similique alias nihil explicabo quidem. Minus, itaque?
+                Perferendis
+                reiciendis, iure quos nostrum ipsam distinctio praesentium impedit eius quis neque dolorem aliquid est,
+                saepe, nam deserunt hic quibusdam dolorum a minima enim dicta! Repudiandae, quidem minima sunt
+                praesentium
+                soluta eum adipisci sint libero. Quaerat nulla porro praesentium ratione architecto eligendi neque ex
+                aliquam iure optio? Ea, eius doloribus, maiores perferendis aut nam culpa saepe aliquid voluptatum a vel
+                officiis minima iure quisquam, amet totam officia asperiores deleniti soluta adipisci.</p>
+            <div class="image">
+                <span>Images</span>
+            </div>
+
+        </div>
+
+        <div id="4">
+            <h2>Corona Virus</h2>
+
+            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos atque voluptas vitae culpa
+                laudantium,
+                perferendis incidunt esse eveniet doloremque aliquid eius tempora nobis aut magnam accusantium
+                repellendus
+                ea, aspernatur inventore! Modi quisquam itaque esse nemo incidunt harum minus illum, repudiandae vel
+                nobis
+                nihil veritatis soluta blanditiis, commodi autem aliquam laudantium, iste eius suscipit consectetur
+                facilis
+                assumenda. A sit minima, doloremque veritatis dolores possimus distinctio! Perspiciatis dicta quasi
+                optio
+                blanditiis neque in modi ea consequuntur quo! Quibusdam quod deserunt aliquam consequuntur fugiat earum
+                nihil blanditiis voluptatem omnis eveniet dolor amet molestiae qui unde alias laborum assumenda,
+                obcaecati
+                neque labore. Dolor, reprehenderit. Officiis quasi, excepturi inventore ad possimus, quia incidunt,
+                recusandae velit ratione asperiores quae eveniet. Nam quasi architecto ab pariatur laudantium hic iure,
+                quo
+                doloribus nobis facilis maiores enim explicabo similique quibusdam facere tempore ipsum quaerat dolor
+                earum
+                aliquid numquam impedit consequatur. Itaque explicabo alias dignissimos, quasi modi reprehenderit
+                voluptatum
+                dicta ratione rerum aspernatur expedita quia, vero quos consequatur perspiciatis officia vitae, corporis
+                odit voluptas ex molestiae? Cum iure consequatur dignissimos odit provident consequuntur minima
+                laboriosam
+                temporibus accusantium placeat ut accusamus animi maiores laborum, repudiandae molestias repellat
+                necessitatibus veniam voluptate? Optio, sint ex? Quia ratione in ut possimus atque, explicabo quaerat
+                doloremque neque necessitatibus nemo nihil ullam perferendis odit quidem quibusdam eaque asperiores
+                voluptates officiis accusamus! Eos impedit iste repudiandae ad iure quae numquam repellat, ea eligendi
+                totam
+                nulla cupiditate. Nobis omnis, commodi labore rem sint adipisci facilis doloremque animi repellendus
+                voluptate iste dolor nemo, ipsam, dolorem similique alias nihil explicabo quidem. Minus, itaque?
+                Perferendis
+                reiciendis, iure quos nostrum ipsam distinctio praesentium impedit eius quis neque dolorem aliquid est,
+                saepe, nam deserunt hic quibusdam dolorum a minima enim dicta! Repudiandae, quidem minima sunt
+                praesentium
+                soluta eum adipisci sint libero. Quaerat nulla porro praesentium ratione architecto eligendi neque ex
+                aliquam iure optio? Ea, eius doloribus, maiores perferendis aut nam culpa saepe aliquid voluptatum a vel
+                officiis minima iure quisquam, amet totam officia asperiores deleniti soluta adipisci.</p>
+            <div class="image">
+                <span>Images</span>
+            </div>
+
+        </div>
     </main>
+
     <footer id="footer">
         <p>Copyright &copy; HOTSOS.com</p>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        function darkmode() {
+            let para = document.getElementsByClassName('para');
+            let dark = document.getElementsByClassName('dark');
+            let body = document.getElementById('body');
+            if (body.style.backgroundColor = 'white') {
+                body.style.backgroundColor = '#373232';
+                body.style.color = 'white';
+            }
+        }
+    </script>
 </body>
 
 </html>

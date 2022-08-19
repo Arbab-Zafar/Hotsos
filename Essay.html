@@ -5,220 +5,218 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="responive/responsive2.css">
-    <title>essay</title>
+    <title>Essay</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans&family=Poppins:wght@300&family=Roboto:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif, 'Roboto';
+        }
+
         * {
             margin: 0;
             padding: 0;
         }
-
-        .button {
-            margin: 20px 35px 20px 10px;
-            height: 42px;
-            width: 59px;
-            border-radius: 0;
-            border: solid white;
-            background-color: #8686fb;
+        nav {
+            background-color: rgb(86, 208, 159);
             color: white;
+            border-bottom: 5px solid rgb(214, 214, 214);
         }
 
-        .button:hover {
-            cursor: pointer;
-            /* background: grey; */
-            font-weight: bold;
+        nav ul {
+            display: flex;
+            list-style: none;
         }
 
-        .button2 {
-            margin: 20px 35px 20px 0;
-            height: 42px;
-            width: 59px;
-            border-radius: 0;
-            border: solid white;
-            background-color: #8686fb;
-            color: white;
+        nav ul li {
+            padding-right: 17px;
+            margin-top: 10px;
+            font-weight: 650;
+            font-size: 15px;
         }
 
-        .button2:hover {
-            cursor: pointer;
-            /* background: grey; */
-            font-weight: bold;
-        }
-
-        .button3 {
-            margin: 20px 35px 20px 102px;
-            height: 42px;
-            width: 77px;
-            border-radius: 0;
-            border: solid white;
-            background-color: #8686fb;
-            color: white;
-        }
-
-        .button3:hover {
-            cursor: pointer;
-            /* background: grey; */
-            font-weight: bold;
-        }
-
-        .button4 {
-            margin: 20px 35px 20px 35px;
-            height: 42px;
-            width: 59px;
-            border-radius: 0;
-            border: solid white;
-            background-color: #8686fb;
-            color: white;
-        }
-
-        .button4:hover {
-            cursor: pointer;
-            /* background: grey; */
-            font-weight: bold;
+        #hot {
+            font-size: 30px;
+            font-weight: 800;
+            position: relative;
+            bottom: 7px;
+            margin-left: 10px;
         }
 
         #search {
-            height: 35px;
-            width: 555px;
-            border: 2px solid #8686fb;
-            border-radius: 3px;
+            display: flex;
+            width: 303px;
+            height: 6vh;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+            border: 2px solid white;
+            position: relative;
+            padding-right: 10px;
+            padding-left: 20px;
         }
 
+        .list {
+            position: relative;
+            top: 4px;
+        }
 
-
-        #vocabolory3 {
-            /* padding: 13px; */
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        a:hover{
+          color: rgb(165, 163, 163);
+        }
+        #ess{
+           text-decoration: underline;
+        }
+        #logo {
+            height: 30px;
+            width: 30px;
+            margin-top: 12px;
+            margin-left: 10px;
+        }
+        footer {
+            text-align: center;
+            background-color: rgb(45, 43, 43);
             display: flex;
+            align-items: center;
             justify-content: center;
-            font-size: 47px;
-            color: rgb(59, 186, 198);
-
+            color: white;
         }
 
-        .mostsearched {
+        #home {
+            height: 20px;
+            width: 20px;
+            margin-top: 14px;
+            margin-right: 5px;
+        }
+
+        #sear {
+            height: 6vh;
+            width: 30px;
             display: flex;
-            justify-content: flex-end;
-            padding: 0 41px;
-
+            margin-top: 0px;
+            background-color: white;
+            color: rgb(86, 208, 159);
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+        h2{
+            margin-bottom: 50px;
         }
 
-        .container1 {
-            padding: 0 0 20px 0;
+        #s {
+            padding-right: 0px;
         }
 
-        .container2 {
-            padding: 20px 0 0 0;
+        #set {
+            height: 20px;
+            width: 20px;
+            margin-top: 14px;
+            margin-right: 5px;
         }
 
-        .topic {
-            padding: 0px 0 4px;
-            display: flex;
-            justify-content: center;
-            color: red;
-            text-decoration: underline;
-
+        #sign {
+            height: 20px;
+            width: 20px;
+            margin-top: 14px;
+            margin-right: 5px;
         }
 
-        .presentition {
-            margin: 0 200px 0 119px;
-            padding: 2px;
-            font-size: 24px;
-
+        #more {
+            height: 20px;
+            width: 15px;
+            background-color: rgb(86, 208, 159);
+            text-decoration: none;
+            color: white;
+            border: 0px;
+            position: relative;
+            top: 6.5px;
+            left: -2px;
+            border-radius: 10px;
         }
 
-        #end {
-            display: flex;
-            justify-content: center;
-            padding: 10px 0 10px 0;
-            font-size: large;
-        }
-
-        /* .hr {
-            
-        } */
-        /* #feedback{
-            font-size: 20px;
-        } */
-        #feedbackinput {
-            margin: 60px 0 30px 119px;
-            height: 90px;
-            width: 331px;
-            font-size: 14px;
-            border: 2px solid blue;
-            border-radius: 16px;
-        }
-        .dark{
-            margin: 10px;
-            display: inline-block;
-        }
-        #darkmode{
+        .opt {
+            background-color: rgb(179, 239, 204);
             color: black;
-            border: 1px solid grey;
-            border-radius: 5px;
-            padding: 5px;
+        }
+
+        h1 {
+            color: rgb(226, 77, 77);
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: underline;
+        }
+
+        h2 {
+            color: rgb(131, 131, 224);
+            margin-left: 10px;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        p {
+            margin-left: 8px;
+            margin-bottom: 10px;
+            line-height: 22px;
+            font-size: 17px;
+            display: inline-block;
         }
     </style>
 </head>
-  
+
 <body>
     <header>
-        <button class="button">
-            Home
-        </button>
-        <button class="button2">
-            Contact
-        </button>
-        <input id="search" type="search" placeholder="search">
-      
-            <button class="button3">Dark mode</button>a
-
-        <button class="button4">
-            More
-        </button>
+        <nav>
+            <ul>
+                <ion-icon name="logo-octocat" id="logo"></ion-icon>
+                <li id="hot">Hotsos</li>
+                <ion-icon name="home" id="home"></ion-icon>
+                <a href="newhot.html">
+                    <li class="list">Home</li>
+                </a>
+                <a href="Essay.html" id="ess">
+                    <li class="list">Essay</li>
+                </a>
+                <a href="short notes.html">
+                    <li class="list">Short Notes</li>
+                </a>
+                <a href="Writing.html">
+                    <li class="list">Writing</li>
+                </a>
+                <a href="Word Meaning.html">
+                    <li class="list">Word Meaning</li>
+                </a>
+                <li id="s"><input type="search" name="" id="search" placeholder="Search....."></li>
+                <li>
+                    <ion-icon name="search-outline" id="sear"></ion-icon>
+                </li>
+                <ion-icon name="settings-outline" id="set"></ion-icon>
+                <li class="list">Settings</li>
+                <ion-icon name="log-in-outline" id="sign"></ion-icon>
+                <li class="list">Sign-In</li>
+                <li id="sel"><label for="more" class="list">More</label>
+                    <select name="more" id="more">
+                        <option value="Sign-Out" class="opt">
+                            <p>Sign-Out</p>
+                        </option>
+                        <option value="Help" class="opt">Help</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
     </header>
+
     <main>
         <h1 id="vocabolory3">Essay</h1>
         <div class="mostsearched">
 
-            <th>Most Searched</th>
         </div>
         <div class="container1">
-            <h1 class="topic">Water cycle essay</h1>
-            <p class="presentition">The water cycle is also known as the hydrologic cycle. The water cycle decribes the
-                movement of water on, above and below the surface of Earth. Water can change states throught the stages
-                of
-                the water cycle. Water can change from a solid to a liquid to water vapor in various places of the water
-                cycle. Water moves from one lake to another, just like from an ocean to the atmosphere. Water travels by
-                different processes of evaporation, condesation, precipition, infilration, runoff and subsatance flow.
-                When
-                these process occur water goes through different phase such as:liquid, solid, and gas.
-                Hyrologic Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab accusamus cumque illo, dolorum
-                consectetur, molestiae eligendi quae nihil iure provident natus cupiditate sint voluptatum illum dicta,
-                voluptates non rerum veniam. Quisquam ducimus excepturi nobis. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Accusantium ratione cumque magni iure officia obcaecati aliquam voluptas quisquam
-                porro.
-                Doloribus, obcaecati sapiente animi recusandae illum maiores hic facere nobis dicta vero laborum. Non,
-                laudantium.
-                <br>
-                <br>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti repellendus molestias ipsam,
-                excepturi voluptatum est in ullam. Fuga, nulla dolorum expedita autem ut optio assumenda sapiente illo
-                officiis. Nesciunt mollitia voluptatem voluptates esse suscipit nobis cupiditate excepturi eligendi
-                architecto similique quibusdam, porro iusto eos quasi illum sunt unde consectetur ullam labore velit? Ut
-                corrupti nostrum vero ex voluptas doloribus officiis velit aspernatur recusandae enim vel repellat
-                necessitatibus quas aliquam, hic corporis nulla, eligendi voluptatibus similique assumenda! Aspernatur
-                consequuntur nam dignissimos nostrum illum laborum inventore saepe, nesciunt repellendus delectus
-                ratione cumque. Aspernatur aut, doloremque provident, repellat odit ducimus assumenda repellendus,
-                tenetur nesciunt quidem nihil temporibus voluptate quaerat nisi neque optio dolores necessitatibus ad
-                sed molestias vel cum. Quos adipisci nesciunt, doloribus facere recusandae temporibus voluptas iure qui
-                quam praesentium nobis cum, fugit accusamus nam nemo!
-            </p>
-        </div>
-        <!-- <hr class="hr"> -->
-        <div class="container2">
-            <h1 class="topic">Pollution</h1>
-            <p class="presentition">
-                Pollution is a term which even kids are aware of these days. It has become so common that almost
+            <h2 class="topic">Pollution</h2>
+            <p class="presentition"> Pollution is a term which even kids are aware of these days. It has become so common that almost
                 everyone acknowledges the fact that pollution is rising continuously. The term ‘pollution’ means the
                 manifestation of any unsolicited foreign substance in something. When we talk about pollution on earth,
                 we refer to the contamination that is happening of the natural resources by various pollutants. All this
@@ -248,7 +246,6 @@
                 plastic ends up in the oceans and land, which pollutes them.
 
 
-
                 So, remember to not dispose of them off after use, rather reuse them as long as you can. We must also
                 encourage everyone to plant more trees which will absorb the harmful gases and make the air cleaner.
                 When talking on a bigger level, the government must limit the usage of fertilizers to maintain the
@@ -261,60 +258,64 @@
                 of such human activities. So, all of us must take a stand and become a voice for the unheard in order to
                 make this earth pollution-free.
             </p>
-            <div class="container1">
-                <h1 class="topic">Sound Pollution</h1>
-                <p class="presentition">Noise pollution is a form of pollution which has become very deadly nowadays.
-                    This pollution is increasing only and creates an unsafe environment. Noise pollution is when the
-                    level of noise increases more than the normal level. When the amount of noise exceeds, it becomes
-                    dangerous for living beings. Moreover, these unpleasant sounds cause several disturbances and create
-                    an imbalance in the environment.
+        </div>
+        
+        <!-- <hr class="hr"> -->
+        <div class="container1">
+            <h2 class="topic">Sound Pollution</h2>
+            <p class="presentition">Noise pollution is a form of pollution which has become very deadly nowadays.
+                This pollution is increasing only and creates an unsafe environment. Noise pollution is when the
+                level of noise increases more than the normal level. When the amount of noise exceeds, it becomes
+                dangerous for living beings. Moreover, these unpleasant sounds cause several disturbances and create
+                an imbalance in the environment.
 
-                    In other words, high volume noises are abnormal. As the world is advancing at a rapid rate, so is
-                    noise pollution. Technology has made things easier for people by creating appliances and devices for
-                    almost everything. You want to mix or grind something? It can be done with a mixer and blender. You
-                    are feeling hot? Simply turn on the AC or cooler. Do you want entertainment at home? You can watch
-                    television or play music. However, people don’t realize this comfort comes with harmful effects too.
-                    All the mentioned appliances contribute to noise pollution. They disturb the natural rhythm of life
-                    and fall in the category of a pollutant.
-                    <br>
-                    <br>
-                    As the world is turning to technology for their comfort, it is, at the same time, harming us. The
-                    industries no matter how big or small contribution to noise pollution. The equipment they use like
-                    compressors, exhaust fans, generators and more produce a lot of noise.
+                In other words, high volume noises are abnormal. As the world is advancing at a rapid rate, so is
+                noise pollution. Technology has made things easier for people by creating appliances and devices for
+                almost everything. You want to mix or grind something? It can be done with a mixer and blender. You
+                are feeling hot? Simply turn on the AC or cooler. Do you want entertainment at home? You can watch
+                television or play music. However, people don’t realize this comfort comes with harmful effects too.
+                All the mentioned appliances contribute to noise pollution. They disturb the natural rhythm of life
+                and fall in the category of a pollutant.
+                <br>
+                <br>
+                As the world is turning to technology for their comfort, it is, at the same time, harming us. The
+                industries no matter how big or small contribution to noise pollution. The equipment they use like
+                compressors, exhaust fans, generators and more produce a lot of noise.
 
-                    Similarly, the ever-increasing use of automobiles is a major cause of this pollution. Not only
-                    automobiles but other transport vehicles like airplanes, buses, bikes, trucks and more also are a
-                    part of it. People honk unnecessarily in the traffic and listen to loud music on the way which
-                    creates high levels of noise.
+                Similarly, the ever-increasing use of automobiles is a major cause of this pollution. Not only
+                automobiles but other transport vehicles like airplanes, buses, bikes, trucks and more also are a
+                part of it. People honk unnecessarily in the traffic and listen to loud music on the way which
+                creates high levels of noise.
 
-                    Furthermore, social events like marriages, parties, and religious functions in places like clubs,
-                    pubs, temples, halls and more create a lot of nuisance in the residential areas. In addition, the
-                    construction activities like mining, the building of flyovers, bridges and more also produce great
-                    noise.
-                    <br>
-                    <br>
+                Furthermore, social events like marriages, parties, and religious functions in places like clubs,
+                pubs, temples, halls and more create a lot of nuisance in the residential areas. In addition, the
+                construction activities like mining, the building of flyovers, bridges and more also produce great
+                noise.
+                <br>
+                <br>
 
-                    Though it may not be talked about much, noise pollution has a serious impact on the lives of living
-                    beings. Firstly, noise pollution causes a number of hearing problems. High levels of noise damage
-                    the Eardrums and sometimes even cause loss of hearing.
+                Though it may not be talked about much, noise pollution has a serious impact on the lives of living
+                beings. Firstly, noise pollution causes a number of hearing problems. High levels of noise damage
+                the Eardrums and sometimes even cause loss of hearing.
 
-                    Similarly, it reduces the ear sensitivity to the sounds that the human body requires to regulate our
-                    rhythm of the body. Moreover, it also affects our psychological health. It may not be evident
-                    instantly, but in the long run, it changes our behavior.
+                Similarly, it reduces the ear sensitivity to the sounds that the human body requires to regulate our
+                rhythm of the body. Moreover, it also affects our psychological health. It may not be evident
+                instantly, but in the long run, it changes our behavior.
 
-                    When your sleep gets disturbed or you constantly have headaches because of too much noise, you tend
-                    to experience fatigue and even migraines.
+                When your sleep gets disturbed or you constantly have headaches because of too much noise, you tend
+                to experience fatigue and even migraines.
 
-                    Not only humans but noise pollution also impacts wildlife too. For instance, pets become aggressive
-                    or afraid when they hear a loud noise. It is one of the main reasons why crackers are not encouraged
-                    when pets are around.
-                    In short, we must make people aware of the impact of noise pollution. Likewise, we must encourage
-                    them to adopt ways that do not contribute to noise pollution. If everyone starts doing the same on
-                    an individual level, we will surely be able to reduce noise pollution to a great extent.
+                Not only humans but noise pollution also impacts wildlife too. For instance, pets become aggressive
+                or afraid when they hear a loud noise. It is one of the main reasons why crackers are not encouraged
+                when pets are around.
+                In short, we must make people aware of the impact of noise pollution. Likewise, we must encourage
+                them to adopt ways that do not contribute to noise pollution. If everyone starts doing the same on
+                an individual level, we will surely be able to reduce noise pollution to a great extent.
                 </p>
             </div>
+            
             <div class="container1">
-                <h1 class="topic">Water Pollution</h1>
+                <h2 class="topic">Water Pollution</h2>
                 <p class="presentition">Water pollution occurs when water bodies are contaminated with various chemical
                     substances. Some of the most common sources of water pollution are factories, power plants, and
                     agricultural processes. Water conservation is an integral part of protecting the environment. Now
@@ -349,7 +350,7 @@
                 </p>
             </div>
             <div class="container1">
-                <h1 class="topic">Inflation</h1>
+                <h2 class="topic">Inflation</h2>
                 <p class="presentition">India’s food production crossed 235 million tonnes during years 2010-11 as per
                     the latest estimates and this is the highest since Independence. The previous highest production, at
                     nearly 233 million tonnes, was achieved in years 2008-09. Agriculture recorded a 5.4% growth in
@@ -388,8 +389,9 @@
 
                 </p>
             </div>
+            
             <div class="container1">
-                <h1 class="topic">Women Empowerment</h1>
+                <h2 class="topic">Women Empowerment</h2>
                 <p class="presentition">Women empowerment refers to making women powerful to make them capable of
                     deciding for themselves. Women have suffered a lot through the years at the hands of men. In earlier
                     centuries, they were treated as almost non-existent. As if all the rights belonged to men even
@@ -441,15 +443,18 @@
 
                 </p>
             </div>
+            
 
             <p id="end">---THE END---</p>
         </div>
     </main>
     <footer>
         <div class="container2">
-
-            <input id="feedbackinput" type="text" placeholder="     give your feedback">
+            <input id="feedbackinput" type="text" placeholder="     Give your feedback">
     </footer>
+</body>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

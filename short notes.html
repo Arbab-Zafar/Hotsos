@@ -7,62 +7,244 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Short Notes</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&family=PT+Sans&family=Poppins:wght@300&family=Roboto:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif, 'Roboto';
+        }
+
         @media only screen and (max-width: 950px) {
             body {
                 background-color: lightblue;
                 margin: 0;
                 padding: 0;
             }
-            p{
+
+            p {
                 flex-wrap: wrap;
             }
-            h1{
+
+            h1 {
                 text-align: center;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
-            #search{
+
+            #search {
                 margin: 0;
                 padding: 0;
                 display: flex;
-                width: ;
             }
         }
+
         @media only screen and (max-width: 300px) {
-            #search{
+            #search {
                 width: 10vw;
             }
         }
-        #search {
-            width: 90vw;
-            margin-right: 3vw;
-            margin-left: 3vw;
-            margin-top: 3vh;
-            padding-left: 3vw;
-            height: 8vh;
-            border-radius: 10px;
+
+        * {
+            margin: 0px;
+            padding: 0px;
         }
 
         h2 {
-            color: green;
+            color: rgb(131, 131, 224);
             display: flex;
         }
 
         p {
             display: flex;
         }
+
+        nav {
+            background-color: rgb(86, 208, 159);
+            color: white;
+            border-bottom: 5px solid rgb(214, 214, 214);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            padding-right: 17px;
+            margin-top: 10px;
+            font-weight: 650;
+            font-size: 15px;
+        }
+
+        #hot {
+            font-size: 30px;
+            font-weight: 800;
+            position: relative;
+            bottom: 7px;
+            margin-left: 10px;
+        }
+
+        #search {
+            display: flex;
+            width: 303px;
+            height: 6vh;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+            border: 2px solid white;
+            position: relative;
+            padding-right: 10px;
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            background-color: rgb(45, 43, 43);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .list {
+            position: relative;
+            top: 3px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #logo {
+            height: 30px;
+            width: 30px;
+            margin-top: 12px;
+            margin-left: 10px;
+        }
+
+        #home {
+            height: 20px;
+            width: 20px;
+            margin-top: 14px;
+            margin-right: 5px;
+        }
+
+        #sear {
+            height: 6vh;
+            width: 30px;
+            display: flex;
+            margin-top: 0px;
+            background-color: white;
+            color: rgb(86, 208, 159);
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+        .dark-mode {
+            background-color: #373232;
+            color: white;
+        }
+        .dark {
+            margin: 10px;
+            display: inline-block;
+        }
+
+        #darkmode {
+            color: black;
+            border: 1px solid grey;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        #s {
+            padding-right: 0px;
+        }
+
+        #set {
+            height: 20px;
+            width: 20px;
+            margin-top: 14px;
+            margin-right: 5px;
+        }
+
+        a:hover {
+            color: rgb(165, 163, 163);
+        }
+
+        #shor {
+            text-decoration: underline;
+        }
+
+        #sign {
+            height: 20px;
+            width: 20px;
+            margin-top: 14px;
+            margin-right: 5px;
+        }
+
+        #more {
+            height: 20px;
+            width: 15px;
+            background-color: rgb(86, 208, 159);
+            text-decoration: none;
+            color: white;
+            border: 0px;
+            position: relative;
+            top: 4px;
+            left: -2px;
+            border-radius: 10px;
+        }
+
+        .opt {
+            background-color: rgb(179, 239, 204);
+            color: black;
+        }
     </style>
 </head>
 
-<body>
+<body id="body">
     <header>
-        <h1 style="color:#e34949; text-align: center; text-decoration: underline;">Short Notes</h1>
+        <nav>
+            <ul>
+                <ion-icon name="logo-octocat" id="logo"></ion-icon>
+                <li id="hot">Hotsos</li>
+                <ion-icon name="home" id="home"></ion-icon>
+                <a href="Hotsos.html">
+                    <li class="list">Home</li>
+                </a>
+                <a href="Essay.html" id="ess">
+                    <li class="list">Essay</li>
+                </a>
+                <a href="Short Notes.html">
+                    <li class="list">Short Notes</li>
+                </a>
+                <a href="Writing.html">
+                    <li class="list">Writing</li>
+                </a>
+                <a href="Word Meaning.html">
+                    <li class="list">Word Meaning</li>
+                </a>
+                <li id="s"><input type="search" name="" id="search" placeholder="Search....."></li>
+                <li>
+                    <ion-icon name="search-outline" id="sear"></ion-icon>
+                </li>
+                <ion-icon name="settings-outline" id="set"></ion-icon>
+                <li class="list">Settings</li>
+                <ion-icon name="log-in-outline" id="sign"></ion-icon>
+                <li class="list">Sign-In</li>
+                <li id="sel"><label for="more" class="list">More</label>
+                    <select name="more" id="more">
+                        <option value="Sign-Out" class="opt">
+                            <p>Sign-Out</p>
+                        </option>
+                        <option value="Help" class="opt">Help</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <div>
-            <input type="search" placeholder="Search... " id="search">
+        <div class="dark">
+            <button id="darkmode" onclick="darkmode()">Dark mode</button>
         </div>
+        <h1 style="color:#e34949; text-align: center; text-decoration: underline;">Short Notes</h1>
         <h2>Mahatma Gandhi</h2>
         <p style="font: size 25px;">Mahatma Gandhi, byname of Mohandas Karamchand Gandhi, (born October 2, 1869,
             Porbandar, India—died January 30, 1948, Delhi), Indian lawyer, politician, social activist, and writer who
@@ -110,6 +292,20 @@
             substance abuse rates, greater financial security, and improved physical and mental health.</p>
         <h2 style="color:red; text-decoration: underline;">Trending</h2>
     </main>
+    <footer id="footer">
+        <p>Copyright &copy; HOTSOS.com</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        function darkmode() {
+            let para = document.getElementsByClassName('para');
+            let dark = document.getElementsByClassName('dark');
+            let body = document.getElementById('body');
+            let mode = document.getElementsByClassName('dark-mode')
+            body.classList.toggle("dark-mode");
+        }
+    </script>
 </body>
 
 </html>
